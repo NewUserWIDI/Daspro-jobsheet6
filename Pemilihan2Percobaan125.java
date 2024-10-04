@@ -11,14 +11,9 @@ public class Pemilihan2Percobaan125{
 
         if ((tahun %4) == 0) {
             if ((tahun % 100) != 0)
-              if ((tahun % 400) !=0)
               System.out.print("Tahun Kabisat");
-        else{
-            System.out.print("Bukan Tahun Kabisat");
-        }
-    else {
-        System.out.println("Tahun Kabisat");
-    }
+                if ((tahun % 400) != 0)
+                System.out.print("Bukan Tahun Kabisat");
         }else
             System.out.print("Bukan Tahun Kabisat");
 
