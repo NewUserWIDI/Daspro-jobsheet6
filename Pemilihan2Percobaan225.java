@@ -23,7 +23,7 @@ public class Pemilihan2Percobaan225 {
         caraPembayaran = input25.next();
         System.out.println("---------------------------------------");
 
-        if (member.equals("y")) {
+        if (member.equalsIgnoreCase("y")) {
             System.out.println("Besar diskon = 10%");
             if (pilihanMenu == 1) {
                 harga = 14000;
@@ -45,13 +45,13 @@ public class Pemilihan2Percobaan225 {
             totalBayar = harga - (harga * diskon) * jmlBeli;
             System.out.println("Menu yang dipilih: " + pilihanMenu);
             System.out.println("Total bayar setelah diskon = " + totalBayar);
-            if (caraPembayaran.equals("QRIS")) {
+            if (caraPembayaran.equalsIgnoreCase("QRIS")) {
                 totalBayar -= 1000;
                 System.out.println("Total Bayar Dengan QRIS: " + totalBayar);  
             }
         }
         
-        else if (member.equals("n")) {
+        else if (member.equalsIgnoreCase("n")) {
             if (pilihanMenu == 1) {
                 harga = 14000;
                 System.out.println("Harga rice bowl = ");
@@ -72,7 +72,7 @@ public class Pemilihan2Percobaan225 {
             System.out.println("Menu yang dipilih: " + pilihanMenu);
             System.out.println("Total bayar = " + harga);
 
-        } if (caraPembayaran.equals("QRIS")) {
+        } if (caraPembayaran.equalsIgnoreCase("QRIS")) {
             totalBayar -= 1000;
             System.out.println("Total Bayar Dengan QRIS: " + totalBayar);
             
